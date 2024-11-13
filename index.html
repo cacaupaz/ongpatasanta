@@ -8,28 +8,42 @@
   <link rel="icon" href="images/icon-pata-santa.png" type="image/png">
 </head>
 <body>
+
   <header>
     <div class="header-content">
-        <img src="images/icon-pata-santa.png" alt="Logo da ONG Pata Santa" class="logo">
-        <h1>ONG De Proteção Animal Pata Santa</h1>
+      <img src="images/icon-pata-santa.png" alt="Logo da ONG Pata Santa" class="logo">
+      <h1>ONG De Proteção Animal Pata Santa</h1>
     </div>
     <nav>
-        <a href="index.html">Início</a>
-        <a href="sobre.html">Sobre</a>
-        <a href="contato.html">Contato</a>
+      <a href="index.html">Início</a>
+      <a href="sobre.html">Sobre</a>
+      <a href="contato.html">Contato</a>
     </nav>
-</header>
+  </header>
 
   <section class="intro">
     <h2>Bem-vindo à Pata Santa</h2>
     <p>Nossa missão é resgatar, cuidar e encontrar lares para animais abandonados. Junte-se a nós e faça a diferença!</p>
-    <p>Ajude com seu PIX a manter o nosso trabalho, utilizamos 100% das doações em prol dos animais.</p>
     <div class="buttons">
-      <button>Doar</button>
-      <button>Adotar</button>
-      <button>Seja um Voluntário</button>
+      <a href="https://www.vakinha.com.br/vaquinha/80-caes-das-enchentes-despejados-ajude-a-pagar-o-aluguel-do-novo-abrigo?fbclid=PAZXh0bgNhZW0CMTEAAaZUe_268W9RmrTNfjKo26hWqWm-LV0dx5PaT5pJnIgMta7RT4857jBbXw4_aem_PkqwR39pwmyfkQ8lg6lPcA&utm_campaign=whatsapp&utm_content=5067571&utm_medium=website&utm_source=social-shares" class="botao">Doar</a>
+      <a href="https://www.instagram.com/ongpatasanta/" class="botao">Adotar</a>
+      <a href="javascript:void(0);" class="botao" onclick="openModal()">Seja um Voluntário</a>
     </div>
   </section>
+
+  <div id="volunteerModal" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal()">&times;</span>
+      <h3>Seja um Voluntário</h3>
+      <p>Junte-se a nós como voluntário e ajude a transformar a vida de muitos animais! Como voluntário, você poderá:</p>
+      <ul>
+        <li>Ajudar no resgate e cuidado dos animais</li>
+        <li>Colaborar em eventos de adoção</li>
+        <li>Apoiar campanhas de conscientização</li>
+      </ul>
+      <p>Entre em contato conosco para mais informações!</p>
+    </div>
+  </div>
 
   <footer>
     <p>&copy; 2024 ONG Pata Santa</p>
@@ -42,5 +56,23 @@
       </a>
     </div>
   </footer>
+
+  <script>
+    function openModal() {
+      document.getElementById("volunteerModal").style.display = "block";
+    }
+
+    function closeModal() {
+      document.getElementById("volunteerModal").style.display = "none";
+    }
+
+    window.onclick = function(event) {
+      const modal = document.getElementById("volunteerModal");
+      if (event.target == modal) {
+        modal.style.display = "none";
+      }
+    }
+  </script>
+
 </body>
 </html>
