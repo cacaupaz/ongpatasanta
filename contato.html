@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>ONG Pata Santa - Sobre</title>
+  <title>ONG Pata Santa - Contato </title>
   <link rel="stylesheet" href="styles.css">
   <link rel="icon" href="images/icon-pata-santa.png" type="image/png">
 </head>
@@ -20,21 +20,23 @@
     </nav>
 </header>
 
-  <section class="intro">
-    <h2>Contato</h2>
-    <form>
-      <label for="nome">Nome:</label>
-      <input type="text" id="nome" name="nome" required>
-      
-      <label for="email">E-mail:</label>
-      <input type="email" id="email" name="email" required>
-      
-      <label for="mensagem">Mensagem:</label>
-      <textarea id="mensagem" name="mensagem" required></textarea>
-      
-      <button type="submit">Enviar</button>
+<section class="contact-form">
+  <h2>Contato</h2>
+  <form action="https://formspree.io/f/xgveydrb" method="POST">
+    <label for="name">Nome:</label>
+    <input type="text" id="name" name="name" required>
+
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required>
+
+    <label for="message">Mensagem:</label>
+    <textarea id="message" name="message" rows="4" required></textarea>
+
+    <button type="submit">Enviar</button>
+  </form>
+
     </form>
-    <p>Telefone: (00) 0000-0000 | E-mail: contatopatasanta@gmail.com</p>
+    <p class="contact-info">Telefone: (51) 99538-5644 | E-mail: contatopatasanta@gmail.com</p>
   </section>
 
   <footer>
